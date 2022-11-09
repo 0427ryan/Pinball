@@ -30,7 +30,7 @@ void init() {
     glutInitWindowPosition(100, 100);
     glutInitWindowSize(512, 512);
 
-    glutCreateWindow("U10916026");
+    glutCreateWindow("Pine Ball");
     glEnable(GL_DEPTH_TEST);
 
     glutDisplayFunc(display);
@@ -94,6 +94,7 @@ void onKeyPressed(unsigned char key, int x, int y) {
         break;
     };
 }
+
 void onKeyReleased(unsigned char key, int x, int y) {
     switch (key) {
     case 'a':
