@@ -2,7 +2,7 @@
 #include <iostream>
 
 void Panel::kick(Ball* ball) {
-	Line l2 = { l.v1, ball->getLocation() - MyVector{0, ball->getRadius()} };
+	Line l2 = { l.v1, ball->getLocation() - l.v1 };
 	l2.reflect(ball);
 	MyVector v = ball->getLocation() - l.v1;
 	if (direction == COUNTERCLOCKWISE) {

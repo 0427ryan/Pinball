@@ -14,6 +14,11 @@ void drawArc(MyVector center, float radius, int slice, float angle1 = 0, float a
 
 void Board::step() {
 	
+	if (ball.getLocation().y < 0) {
+		this->ball.setLocation({ 380, 300 });
+		this->ball.setSpeed({ 0, 0 });
+	}
+
 	this->ball.setLocation(ball.getLocation() + ball.getSpeed());
 	for (auto o : ov) {
 		if (o->isBump(&ball)) {
