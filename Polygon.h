@@ -8,7 +8,7 @@ class Polygon:public Shape{
     Rectangle(vector<MyVector> coords){
       this->coords = coords;
     };
-    bool isBump() override;
-    void doBump() override;
+    bool isBump(Ball *b) override;
+    void doBump(Ball *b) override;
     vector<MyVector>* getCoords(){return &coords};
 }
