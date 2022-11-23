@@ -3,6 +3,6 @@
 
 class Shape{
  public:
-  virtual bool isBump(Ball b);
-  virtual void doBump(Ball b);
+  virtual bool isBump(Ball *b);
+  virtual void doBump(Ball *b);
 }
